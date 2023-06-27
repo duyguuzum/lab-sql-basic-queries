@@ -16,7 +16,8 @@ SELECT count(rental_id) as Number_of_Rented, count(inventory_id) as Number_of_av
 SELECT distinct(last_name) FROM sakila.actor;
 
 SELECT length FROM sakila.film
-WHERE length>150;
+ORDER BY length DESC
+LIMIT 10;
 
 SELECT first_name, last_name FROM sakila.actor
 WHERE first_name = "SCARLETT";
